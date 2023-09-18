@@ -1,0 +1,103 @@
+body {
+    width:100%;
+    font-family: Arial, Arial, Helvetica, Sans-Serif;
+    text-transform: uppercase;
+    background-color: black;
+}
+
+.center-div {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 40%;
+}
+
+.title {
+   background-color: navy;
+   padding: 40px 20px;
+   border: 5px solid black;
+   border-radius: 10px 10px 0 0; 
+}
+
+.title h2 {
+    font-size:2em;
+    margin:0;
+}
+
+.todos {
+    margin-top:10px;
+    padding:40px 25px;
+    background-color:  navy;
+    border: 5px solid black;
+}
+
+.todo {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.todo input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    background-color: yellow;
+}
+
+.todo input[type=checkbox]:checked ~ .checkmark{
+    background-color: red;
+}
+
+
+.todo input[type=text] {
+    border:1px solid #2f2c4e;
+    padding:5px;
+    width:85%;
+    margin:0px 20px;
+    font-size:1.2em;
+    vertical-align: top;
+    background-color: yellow;
+}
+
+.todo input[type=text].complete {
+    text-decoration: line-through;
+    color: #2f2c4e;
+}
+.todo input[type=button] {
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: yellow;
+    color: rgb(255, 4, 4);
+    font-size:1.6em;
+    border:0;
+}
+
+.add-button {
+    background-color: yellow;
+    border-radius:50%;
+    font-size:4em;
+    width:75px;
+    height:75px;
+    position:absolute;
+    bottom:-35px;
+    left:45%;
+}
+
+
